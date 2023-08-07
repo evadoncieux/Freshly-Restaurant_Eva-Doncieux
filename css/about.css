@@ -1,0 +1,60 @@
+/* ----------------------------------
+ABOUT PAGE
+---------------------------------- */
+
+.private-dining {
+    background-color: #ebe3db;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+}
+
+.private-dining img {
+    box-shadow: 5px 5px 10px 5px #c5c5c5;
+    max-width: 100%;
+}
+
+.private-dining figcaption {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cooking-video video {
+    margin: 40px;
+}
+
+/* ----------------------------------------------------------------------------
+MEDIA QUERIES
+---------------------------------------------------------------------------- */
+
+/* phone */
+@media screen and (max-width: 780px) {
+    .cooking-video video {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .private-dining {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+}
+
+
+/* tablet */
+@media screen and (min-width: 780px) and (max-width: 980px) {
+    .private-dining {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cooking-video video {
+    margin: 10px 0;
+    width: 100%;
+    }
+    
+}

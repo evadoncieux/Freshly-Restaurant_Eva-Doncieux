@@ -1,0 +1,441 @@
+/* ------------------------------------
+GENERALITIES
+-------------------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Athiti';
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px;
+}
+h1 {
+    font-family: 'Merienda';
+    font-size: 30px;
+    margin: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Merienda';
+    font-size: 25px;
+    margin: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Merienda';
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Merienda';
+    font-size: 18px;
+    margin: 15px;
+    text-align: center;
+}
+
+h1:before, h2:before, h3:before {
+    font: var(--fa-font-solid);
+    content: "\f005";
+    color: #950000;
+    font-size: 0.7em;
+    margin: 0px 10px;
+}
+
+h1:after, h2:after, h3:after {
+    font: var(--fa-font-solid);
+    content: "\f005";
+    color: #950000;
+    font-size: 0.7em;
+    margin: 0px 8px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* ---------------------------------------
+HEADER
+--------------------------------------- */
+
+header {
+    max-width: 1400px;
+    margin: 50px auto;
+}       
+
+
+.header-logo {
+    width: 15%;
+    margin: 5px 10px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-title p {
+    font-family: 'Athiti';
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black;
+    margin: 10px;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    width: 50vw;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+nav li a {
+    text-decoration: none;
+    background-color: #ebe3db;
+    padding: 5px 15px;
+    color: #4c4343;
+    font-family: 'Athiti';
+    font-weight: bold;
+}
+
+nav li a.active {
+    background-color: #4c4343;
+    color: white;
+}
+
+.website-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* ----------------------------------
+FOOTER
+---------------------------------- */
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+    color: white;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+}
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Athiti';
+}
+
+.footer-bg {
+    background-image: url(../ressources/images/footer-bg.jpg);
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.line {
+    width: 30vw;
+    margin: 15px;
+    border: 0.8px dashed rgb(255, 255, 255);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.filter-buttons {
+    text-align: center;
+}
+
+.flex {
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/* --------------------------------------
+HOVER ON MENU IMAGES
+----------------------------------- */
+.hover-container:hover {
+    transform: scale(1.04);
+    transition: transform .5s;
+}
+
+.hover-container {
+    position: relative;
+}
+
+.hover-container figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.hover-container figcaption:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.hover-text {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hover-overlay {
+    position: absolute;
+    color: white;
+    background-color: #4c4343;
+    opacity: 70%;
+    width: 101%;
+    height: 97%;
+    text-align: center;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease;
+    transform: translate(-50%, -51%);
+}
+
+.hover-border {
+    border: 3px solid #ebe3db;
+    width: 80%;
+    height: 80%;
+    margin: 30px auto;
+}
+
+.hover-container:hover .hover-overlay {
+    opacity: 0.8;
+}
+
+/* --------------------------------------
+FONT AWESOME ICONS
+----------------------------------- */
+
+.fa-star {
+    color: #950000;
+}
+
+.fa-brands {
+    padding: 20px;
+}
+
+/* --------------------------------------
+FONT FACES
+-------------------------------------- */
+
+@font-face {
+    font-family: 'Athiti';
+    src: url(../ressources/fonts/Athiti/Athiti-ExtraLight.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Athiti';
+    src: url(../ressources/fonts/Athiti/Athiti-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Athiti';
+    src: url(../ressources/fonts/Athiti/Athiti-Bold.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Merienda';
+    src: url(../ressources/fonts/Merienda/Merienda-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* ----------------------------------------------------------------------------
+MEDIA QUERIES
+---------------------------------------------------------------------------- */
+
+/* phone */
+@media screen and (max-width: 780px) {
+    .container {
+        padding: 1.5rem;
+        padding-top: 0;
+        margin: 10px auto;
+    }
+
+    .header-title {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    nav li {
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li:first-child { 
+        border-top: 1px solid #4c4343;
+        border-bottom: 1px solid #4c4343;
+    }
+
+    nav ul li:nth-child(2), nav ul li:nth-child(3){ 
+        border-bottom: 1px solid #4c4343;
+    }
+
+    nav ul li:last-child { 
+        border-bottom: 1px solid #4c4343;
+    }
+
+
+    .header-title {
+        justify-content: center;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        padding-bottom: 0;
+    }
+    
+    h4 {
+        padding-bottom: 0;
+    }
+
+}
+
+/* tablet */
+@media screen and (min-width: 780px) and (max-width: 980px) {
+    .container {
+        padding: 2rem;
+        margin: 10px auto;
+    }
+    
+    .header-title {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .website-title {
+        min-width: auto;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-links {
+        background-color: #ebe3db;
+        width: 100%;
+        display: flex;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-links li {
+        padding: 0;
+    }
+
+    footer section {
+        width: 33%;
+    }
+
+}

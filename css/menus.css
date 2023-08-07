@@ -1,0 +1,161 @@
+/* ----------------------------------
+MENUS PAGE
+---------------------------------- */
+
+.menu-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ebe3db;
+}
+
+.hover-container {
+    flex: 0 0 calc(30% - 30px);
+    padding: 10px;
+}
+
+.menu-image {
+    width: 100%;
+    box-shadow: 5px 5px 5px 0px #c0bebe;
+}
+
+.mix:hover .hover-overlay, .hover-desert:hover .hover-overlay, .hover-drink:hover .hover-overlay {
+    opacity: 0.8;
+}
+
+.hover-overlay {
+    width: 95%;
+    height: 88%;
+    transform: translate(-50%, -52%);
+}
+
+.hover-border {
+    border: 3px solid #ebe3db;
+    width: 80%;
+    height: 70%;
+    margin: 30px auto;
+}
+
+
+.hover-text {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hover-text p {
+    font-family: 'Merienda';
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+}
+
+.fork-knife {
+    width: 50px;
+    position: absolute;
+    top: 40px;
+}
+
+/* --------------------------------------
+BUTTONS
+--------------------------------------- */
+.btn {
+    font-size: 16px;
+    background-color: #ebe3db;
+    padding: 5px 15px;
+    color: #4c4343;
+    font-family: 'Athiti';
+    font-weight: bold;
+    border: 1px solid #ebe3db;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.mixitup-control-active {
+    background-color: #950000;
+    color: white;
+}
+
+/* --------------------------------------------------
+MEDIA QUERIES
+----------------------------------------------------- */
+
+/* phone */
+@media screen and (max-width: 780px) {
+    .hover-container {
+        flex: 0 0 calc(50% - 30px);
+    }
+
+    .menu-image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .fork-knife {
+        width: 3vw;
+        position: absolute;
+        top: 20px;
+    }
+    
+    .hover-text p {
+        font-family: 'Merienda';
+        font-size: 0.8rem;
+        font-weight: bold;
+        position: absolute;
+        top: 60px;
+    }
+}
+
+/* tablet */
+    @media screen and (min-width: 780px) and (max-width: 980px) {
+        .menu-image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .hover-overlay {
+            width: 90%;
+            height: 82%;
+            transform: translate(-50%, -53%);
+        }
+        
+        .hover-border {
+            border: 2px solid #ebe3db;
+            width: 80%;
+            height: 60%;
+            margin: 25px auto;
+        }
+        
+        
+        .hover-text {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .fork-knife {
+            width: 3vw;
+            position: absolute;
+            top: 5px;
+        }
+        
+        .hover-text p {
+            font-family: 'Merienda';
+            font-size: 0.5rem;
+            font-weight: bold;
+            position: absolute;
+            top: 40px;
+        }
+    }

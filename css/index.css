@@ -1,0 +1,282 @@
+/* ----------------------------------
+HOMEPAGE
+---------------------------------- */
+/* slider section */
+.home-slider {
+    width: 100%;
+    height: auto;
+}
+
+/* content section*/
+.welcome .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    width: auto;
+}
+
+.welcome .content p {
+    font-size: 1em;
+}
+
+.welcome .content img {
+    max-width: 100%;
+    margin-left: 5px;
+}
+
+.left {
+    float: left;
+    width: 60%;
+}
+
+.right {
+    float: right;
+    width: 40%;
+}
+
+.clear {
+    clear: both;
+}
+
+/* menus section */
+.special-menus {
+    width: 100%;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+
+.menu-element {
+    background-color: #ebe3db;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 850px;
+}
+.menu-element img {
+    width: 100%;
+    height: auto;
+}
+
+.hover-text {
+    margin: 10px 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hover-text p {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.hover-text p:first-child {
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.menu-list-items {
+    list-style: none;
+}
+
+.menu-list-items li {
+    padding: 10px 15px;
+}
+
+.menu-list-items li:before {
+    font: var(--fa-font-solid);
+    content: "\f005";
+    color: #950000;
+    font-size: 0.7em;
+    margin: 0px 8px;
+}
+
+.line-menus {
+    border-bottom: 1px dashed #4c4343;
+}
+
+.see-more:before {
+    content: url(../ressources/images/fork-knife.svg);
+    color: white;
+    width: 1.5em;
+    display: inline-block;
+    position: relative;
+    margin: 0px 10px -5px 0px;
+}
+
+.see-more {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-btn {
+    padding: 10px;
+    margin: 30px;
+    color: white;
+    background-color: #4c4343;
+    border: #4c4343;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------------
+                                    MEDIA QUERIES
+---------------------------------------------------------------------------- */
+
+/* phone */
+@media screen and (max-width: 780px) {
+    /* slider section */
+    .home-slider {
+        width: 100%;
+        height: auto;
+    }
+
+    /* content section*/
+    .welcome .content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+    }
+    
+    .welcome .content p {
+        font-size: 1em;
+    }
+
+    .welcome .content img {
+        width: 100%;
+    }
+
+    .left {
+        float: none;
+        width: 100%;
+    }
+
+    .right {
+        float: none;
+        width: 100%;
+    }
+
+    /* menus section */
+
+    .special-menus {
+        width: 100%;
+    }
+
+    .menu-content {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .menu-btn {
+        width: 100%;
+        height: 60px;
+    }
+
+    .menu-element img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .hover-text {
+        margin: 10px 0px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 10px;
+    }
+
+    .hover-text p {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 780px) and (max-width: 980px) {
+
+    /* slider section */
+    .home-slider {
+        width: 100%;
+        height: auto;
+    }
+
+    /* content section*/
+    .welcome .content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    
+    .welcome .content p {
+        font-size: 1em;
+    }
+
+    .welcome .content img {
+        width: 100%;
+    }
+
+    .left {
+        float: none;
+        width: 100%;
+    }
+
+    .right {
+        float: none;
+        width: 100%;
+    }
+
+    /* menus section */
+
+    .special-menus {
+        width: 100%;
+    }
+
+    .menu-content {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .menu-btn {
+        width: 100%;
+        height: 60px;
+    }
+
+    .menu-element img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .hover-text {
+        margin: 10px 0px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 140px;
+        left: 10px;
+    }
+
+    .hover-text p {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
+}

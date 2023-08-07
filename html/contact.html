@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Freshly Restaurant</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <nav>
+                <a href="index.html">
+                    <div class="header-title">
+                        <img src="../ressources/images/logo.png" alt="logo Freshly Restaurant" class="header-logo">
+                        <div class="website-title">
+                            <i class="fa-solid fa-star"></i>
+                            <p>Freshly Restaurant</p>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menus.html">Menus</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <section>
+            <div class="description">
+                <h1>Contact us</h1>
+                <p>If you want to make a reservation, please comlete this form.</p>
+                <p><em>Fields with <span class="required"></span>are required.</em></p>
+            </div>
+                
+            <form action="/" method="post">
+
+                <div class="left">
+                    <h4 class="form-title required">Reservation</h4>
+                    <label for="date" class="required">Date</label>
+                    <input type="date" name="date" id="date" required>
+
+                    <label for="time" class="required">Time</label>
+                    <input type="time" name="time" id="time" required>
+                    
+                    <label for="time" class="required">Number of guests</label>
+                    <input type="number" name="Number of guests" id="guest-nb" required>
+                </div>
+
+
+                <div class="right">
+                    <h4 class="form-title">Details</h4>
+                    <label for="name" class="required"> Name</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+
+                    <label for="tel" class="required">Telephone</label>
+                    <input type="tel" name="telephone" id="tel">
+                </div>
+
+                <div class="clear"></div>
+
+                <h4 class="form-title">Further request</h4>
+                <textarea name="further" id="further" cols="100" rows="10"></textarea>
+
+
+                <div class="center">
+                    <button type="submit" class="form-btn">Reserve</button>
+                </div>
+            </form>
+        </section>
+
+
+        <section>
+            <h2>Our location</h2>
+
+            <iframe class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0018141269684%2C40.73332592838951%2C-73.99873763322832%2C40.73466936894854&amp;layer=mapnik" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/#map=19/40.73400/-74.00028"></a></small>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-bg footer">
+        <section class="opening">
+            <h4>Opening hours</h4>
+
+            <hr class="line">
+            
+            <div>
+                <p>Monday: Closed</p>
+                <p>Tue-Wed : 9am - 10pm</p>
+                <p>Thu-Fri : 9am - 10pm</p>
+                <p>Sat-Sun : 5pm - 10pm</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h4>Contact</h4>
+
+            <hr class="line">
+
+            <div>
+                <p>13 Christopher Street</p>
+                <p>New York,</p>
+                <p>NY 10014-3543</p>
+                <br>
+                <p>+01 2000 800 9999</p>
+            </div>
+        </section>
+
+        <section class="socials">
+            <h4>Social networks</h4>
+
+            <hr class="line">
+
+            <div>
+                <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+                <i class="fa-brands fa-pinterest-p fa-2xl"></i>
+            </div>
+        </section>
+    </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/920b7b0ca1.js" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
